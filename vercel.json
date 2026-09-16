@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/api",
+      "destination": "/api/index.py"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/data/(.*)",
+      "destination": "/404",
+      "permanent": false
+    },
+    {
+      "source": "/server.py",
+      "destination": "/404",
+      "permanent": false
+    }
+  ]
+}
